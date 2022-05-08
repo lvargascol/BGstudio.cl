@@ -3,7 +3,7 @@
 :root {
 	--primary-color: #bc8c77;
 	--secondary-color: #eed2d1;
-	--dark-color: #202222;
+	--dark-color: #151616;
 }
 
 
@@ -17,6 +17,10 @@
 html {
 	font-size: 62.5%;
 	font-family: 'Poppins', sans-serif;
+}
+
+body {
+	background-color: var(--primary-color);
 }
 
 .container {
@@ -53,6 +57,23 @@ header {
     padding: 10px 20px;
 }
 
+.mask-nav {
+	-webkit-mask-image: url(/assets/LOGO_BG_Brow_mask.svg);
+	mask-image: url(/assets/LOGO_BG_Brow_mask.svg);
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat; 
+	-webkit-mask-size: 50px;
+	mask-size: 50px;
+	-webkit-mask-position: center;
+	mask-position: center;
+	display: flex;
+}
+
+.mask-nav img {
+	margin: auto;
+}
+
+
 .list-button {
     display: flex;
     flex-direction: column;
@@ -78,10 +99,6 @@ header {
     overflow: hidden;
 }
 
-nav ul {
-	list-style-type: none;
-	
-}
 
 .list-item {
 	text-decoration: none;	
@@ -113,6 +130,7 @@ main {
     display: flex;
     flex-direction: column;
 }
+
 
 /*  Portrait  */
 
@@ -172,21 +190,43 @@ h1 {
 /*  Services  */
 
 .services {
-	background-color: var(--primary-color);
+	
 }
 
 .services-section {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	width: 100%;
+	justify-content:center;	
+	align-items:center;
+	flex-wrap: wrap;
+	padding: 10px 0;
 }
 
 .box {
-	padding: 0;
-	margin: 20px 0;
-	max-width: 300px;
-    box-shadow: 0 0 4px 1px;
+	
+	margin: 20px;
+	width: 135px;
+	height: 180px;
+    box-shadow: 0 0 4px 0px; 
+	background-repeat: no-repeat; 
+	background-position: center;
+	background-size: cover;	
+	display: flex;
+}
+
+.box1 {
+	background-image: url("/assets/cejas.jpg");
+}
+
+.box2 {
+	background-image: url("/assets/pest.jpg");
+}
+
+.box3 {
+	background-image: url("/assets/pest.jpg");
+}
+
+.box4 {
+	background-image: url("/assets/cejas.jpg");
 }
 
 .box img {
@@ -194,13 +234,40 @@ h1 {
 	
 }
 
-.box h3 {
+.box a {
 	
 	text-align: center;
 	text-decoration: none;
+	color: white;
+	font-size: 1.6rem;
+	font-weight: 100;
+	margin: auto;
+
 }
 
+.box h3 {	
+	font-weight: 300;
+}
 
+/*  Mapa  */
+
+.ubication-section {
+	align-items: center;	
+	justify-content: center;
+}
+
+.map {
+	/* border: 10px solid white; */
+    box-shadow: 0 0 4px 0px; 
+	display: flex;
+	padding: 0;
+	margin-bottom: 40px;
+}
+
+.map iframe {
+	width: 100%;
+	margin: 0;
+}
 
 
 /* ****** */
@@ -246,5 +313,7 @@ footer {
 footer p {
     text-align: center;
     color: var(--secondary-color);
+	font-size: 1.2rem;
+	font-weight: 300;
 }
 
