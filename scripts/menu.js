@@ -34,7 +34,7 @@ menuButton.addEventListener('click', ()=>{
 	function changeMenuIcon(icon, show, time, angle) {
 		if (show)
 		{
-			icon.style.transform = 'rotate(' + angle + 'deg) scale(1)';
+			icon.style.transform = 'rotate(' + angle + 'deg) scale(2)';
 			icon.style.transition = 'all ' + time + "s";
 		} else 
 		{
