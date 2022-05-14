@@ -13,7 +13,7 @@
 <body>
 	<header>
 		<div class="container header">				
-			<div class="logo-container">
+			<div class="logo-container" id="header-bar">
 				<div class="mask-nav">
 					<img src="./pallet/eed2d1.png" alt="logo" width="64" height="24">
 				</div>
@@ -48,19 +48,24 @@
 
 
 
-	<main>
-		
-			<section class="portrait bg">
-				<div class="container title-section">
-					<div class="main-logo">
-						<img src="/assets/LOGO_BG_by.svg" id="main-logo" alt="Logo BG Studio">
-					</div>
-					<!-- <div class="title">						
-						<h1>BG Studio</h1>
-						<h2>Amor a primera vista</h2>
-					</div> -->
+	<main id="main">
+		<section class="portrait">
+			<div class="bg" id="portrait">
+				<!-- <h2 style="margin-top: 50px">Amor a primera vista</h2> -->
+			</div>
+			<div class="container title-section">
+				<div class="main-logo">
+					<img src="/assets/LOGO_BG_by.svg" id="main-logo" alt="Logo BG Studio">
+					<button class="button button1" id="button1">Servicios</button>
+					<button class="button button2" id="button2">Nosotros</button>
+					<button class="button button3" id="button3">Cursos</button>
 				</div>
-			</section>
+				<!-- <div class="title">						
+					<h1>BG Studio</h1>
+					<h2>Amor a primera vista</h2>
+				</div> -->
+			</div>
+		</section>
 
 			<!-- <div class="mask1">
 				<img src="/assets/portrait-mobile.jpg" alt="" srcset="">
@@ -73,29 +78,21 @@
 
 			<section class="services">
 				<div class="container services-section">
-					<div class="box box1">
-						<a href="">
-							<h3>Diseño de Cejas</h3>
-						</a>
-					</div>
+					<a href="" class="box box1">
+						<h3>Diseño de Cejas</h3>
+					</a>
 
-					<div class="box box2">
-						<a href="">
-							<h3>Brow Lamination</h3>
-						</a>
-					</div>
+					<a href="" class="box box2">
+						<h3>Brow Lamination</h3>
+					</a>
 
-					<div class="box box3">
-						<a href="">
-							<h3>Lifting de Pestañas</h3>
-						</a>
-					</div>
+					<a href="" class="box box3">
+						<h3>Lifting de Pestañas</h3>
+					</a>
 
-					<div class="box box4">
-						<a href="">
-							<h3>Pestañas Punto a Punto</h3>
-						</a>
-					</div>
+					<a href="" class="box box4">					
+						<h3>Pestañas Punto a Punto</h3>						
+					</a>
 				</div>
 			</section>
 
@@ -136,13 +133,14 @@
 			</div>
 
 			<div>
-				<p>2021 © BGStudio™. Todos los derechos reservados.</p>
+				<p>© Copyright 2022 BGStudio™</p>
 			</div>
 
 		</div>
 	</footer>
 
     <script src="scripts/menu.js"></script>
+	<script src="scripts/dinamic-background.js"></script>
 
 </body>
 </html>

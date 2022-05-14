@@ -4,6 +4,10 @@ let menuButton = document.getElementById("nav-menu");
 let menuList = document.getElementById("menu-list");
 let menuIcon = document.getElementById("menu-icon");
 let cancelIcon = document.getElementById("cancel-icon");
+let headerBar = document.getElementById("header-bar");
+let main = document.getElementById("main");
+
+main.style.paddingTop = headerBar.clientHeight -1 + 'px';
 
 menuButton.addEventListener('click', ()=>{
 		let height = 0;
@@ -34,7 +38,7 @@ menuButton.addEventListener('click', ()=>{
 	function changeMenuIcon(icon, show, time, angle) {
 		if (show)
 		{
-			icon.style.transform = 'rotate(' + angle + 'deg) scale(2)';
+			icon.style.transform = 'rotate(' + angle + 'deg) scale(1.8)';
 			icon.style.transition = 'all ' + time + "s";
 		} else 
 		{

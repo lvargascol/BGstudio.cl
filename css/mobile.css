@@ -1,8 +1,9 @@
 /* General */
 
 :root {
-	--primary-color: #bc8c77;
+	--primary-color: #8a4e4e;
 	--secondary-color: #eed2d1;
+	--tertiary-color: #bc8c77;
 	--dark-color: #151616;
 }
 
@@ -39,7 +40,6 @@ body {
 
 header {
 	background-color: var(--dark-color);
-	opacity: 0.95;
 	width: 100%;
     color: white;
 	position: fixed;
@@ -82,7 +82,7 @@ header {
 }
 
 .menu-icon {
-	transform: rotate(0deg) scale(2);
+	transform: rotate(0deg) scale(1.8);
 	height: auto;
 }
 
@@ -105,7 +105,8 @@ header {
 	text-decoration: none;	
 	padding: 5px; 
     text-align: center;
-	font-size: 1.8rem;
+	font-size: 2.0rem;
+	font-weight: 300;
 }
 
 .nav-link {
@@ -130,6 +131,7 @@ main {
 	width : 100%;
     display: flex;
     flex-direction: column;
+	padding-top: 50px;
 }
 
 
@@ -137,13 +139,21 @@ main {
 
 .portrait {	
 	height: 560px;
-	background-image: url("/assets/portrait-mobile.jpg"); 
-	background-repeat: no-repeat; 
-	background-position: top;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	overflow: hidden;
+}
+
+.bg {
+	width: 100%;
+	height: 100%;
+	background-image: url("/assets/portrait-optim.jpg"); 
+	background-repeat: no-repeat; 
+	transition: all 1s;
+	background-size: cover;
+	transform: scale(1);
 }
 
 
@@ -155,8 +165,12 @@ main {
 }
 
 .main-logo {
-	height: 280px;
-	margin-top: 80px;
+	height: 320px;
+	margin-top: -500px;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .main-logo img {
@@ -164,6 +178,31 @@ main {
 	transform: scale(0.9);
 }
 
+.button {
+	width: 120px;
+	padding: 5px 0;
+	background-color: rgba(256,256, 256,0);
+	color: white;
+	border: white solid 1px;
+	font-size: 2.0rem;
+	font-family: inherit;
+	font-weight: 200;
+	transition: all 1s;
+	transform: translate(-40px,0);
+	opacity: 0;
+}
+
+.button1 {
+	display: block;
+}
+
+.button2 {
+	display: none;
+}
+
+.button3 {
+	display: none;
+}
 
 .title {
 	background-color: rgba(256,256, 256,0.3);
@@ -209,6 +248,19 @@ h1 {
 	background-position: center;
 	background-size: cover;	
 	display: flex;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1.6rem;
+	font-weight: 100;
+	border-radius: 4px;
+	color: var(--dark-color);
+	transition: all 0.2s;
+}
+
+.box:hover {
+	transform: scale(1.1);
+	transition: all 0.2s;
+	
 }
 
 .box1 {
@@ -228,23 +280,14 @@ h1 {
 }
 
 .box img {
-	max-width: 100%;
-	
+	max-width: 100%;	
 }
 
-.box a {
-	
-	text-align: center;
-	text-decoration: none;
-	color: white;
-	font-size: 1.6rem;
-	font-weight: 100;
-	margin: auto;
-
-}
 
 .box h3 {	
 	font-weight: 300;
+	margin: auto;
+	color: white;
 }
 
 /*  Mapa  */
@@ -311,7 +354,7 @@ footer {
 footer p {
     text-align: center;
     color: var(--secondary-color);
-	font-size: 1.2rem;
+	font-size: 1.6rem;
 	font-weight: 300;
 }
 
