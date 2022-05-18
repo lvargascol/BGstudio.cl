@@ -106,5 +106,5 @@ dist
 # images
 
 # *.svg
-# *.jpg
-# *.png
+*.jpg
+*.png
